@@ -17,7 +17,7 @@ body, html{
 }
 
 /* NEWSLETTER SIGNUP */
-.callToAction  a, .tryButton, .productButton {
+.callToAction  a, .tryButton, .orderButton, .detailButton, .productButton {
   background: #91c11e;
   border: none;
   border-radius: 2px;
@@ -25,7 +25,7 @@ body, html{
   color: white;
 }
 
-.callToAction  a:hover,  .tryButton:hover, .productButton:hover {
+.callToAction  a:hover,  .tryButton:hover, .productButton:hover, .orderButton:hover, .detailButton:hover {
   background: #79a119;
   border: none;
   color: white;
@@ -65,6 +65,39 @@ h2 {
   background-position: 66% 8%;
 }
 
+.joseShot {
+  height: 70%;
+  margin-top: 8rem;
+  width: 100%;
+  background-image: url(/assets/joseShot.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 66% 8%;
+}
+.communityShot {
+  height: 70%;
+  margin-top: 8rem;
+  width: 100%;
+  background-image: url(/assets/communityShot.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 66% 8%;
+}
+
+.nakedProducts {
+  height: 70%;
+  margin-top: 8rem;
+  width: 100%;
+  background-image: url(/assets/nakedProducts.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 66% 8%;
+}
+
+.spaceContent div:last-child{
+  margin-top: 1em;
+}
+
 .features {
   background: white;
   text-align: center;
@@ -73,15 +106,20 @@ h2 {
 .features .featureListItem {
   display: flex;
   text-align: left;
+  font-size: 1.3em;
 }
 
 .features .featureListItem .iconWrapper{
-  width: 36px;
+  width: 45px;
+  height: 45px;
+  margin-right: 1em;
 }
 .features .featureListItem .iconWrapper > img{
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  border-radius: 100%;
+  height: 45px !important;
 }
 
 .features .text {

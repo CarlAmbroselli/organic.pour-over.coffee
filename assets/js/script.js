@@ -77,7 +77,7 @@ $('.productButton').each(function() {
 	$(this).attr('href', 'product.html?product=04_'+ window.location.host + '&'+window.location.search.replace('?', '')) 
 })
 
-$('.tryButton, .productButton').each(function() {
+$('.tryButton, .productButton, .getNaked, .learnMore, #joinCommunity, .coffeeFilterButton, .coffeeButton').each(function() {
   $(this).click(function(event) {
     // Remember the link href
     var href = this.href;
