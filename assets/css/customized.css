@@ -38,6 +38,10 @@ h2 {
 
 /* Sections */
 
+.text-main-stage {
+  text-align: center;
+}
+
 .emotional .text {
   color: black !important;
 }
@@ -51,9 +55,33 @@ h2 {
   background-position: 66% 8%;
 }
 
+.productShot {
+  height: 70%;
+  margin-top: 8rem;
+  width: 100%;
+  background-image: url(/assets/actionShot.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 66% 8%;
+}
+
 .features {
   background: white;
   text-align: center;
+}
+
+.features .featureListItem {
+  display: flex;
+  text-align: left;
+}
+
+.features .featureListItem .iconWrapper{
+  width: 36px;
+}
+.features .featureListItem .iconWrapper > img{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .features .text {
@@ -106,5 +134,9 @@ div.emotional {
     max-width: 200px;
     margin-right: 0;
     transform: translateX(0);
+  }
+
+  .text-main-stage {
+    text-align: left;
   }
 }
