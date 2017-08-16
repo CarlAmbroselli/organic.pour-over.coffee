@@ -26,6 +26,7 @@ body, html{
 }
 
 .callToAction  a:hover,  .tryButton:hover, .productButton:hover, .orderButton:hover, .detailButton:hover {
+  /* background: #79a119; */
   background: #79a119;
   border: none;
   color: white;
@@ -91,7 +92,16 @@ h2 {
   background-image: url(/assets/nakedProducts.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 66% 8%;
+  background-position: 66% 39%;
+}
+
+.pitchShot {
+  height: 50%;
+  width: 100%;
+  background-image: url(/assets/pitchImage.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 66% 62%;
 }
 
 .spaceContent div:last-child{
@@ -133,6 +143,7 @@ h2 {
 div.emotional {
   color: black;
   background: white;
+  height: auto !important;
 }
 
 
@@ -159,6 +170,9 @@ div.emotional {
 }
 
 @media (min-width:801px)  { 
+  .slider-stage {
+    text-align: center;
+  }
   img.stars {
     max-width: 30% !important;
   }
@@ -176,5 +190,8 @@ div.emotional {
 
   .text-main-stage {
     text-align: left;
+  }
+  .pitchShot {
+    height: 70%;
   }
 }
