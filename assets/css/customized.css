@@ -169,6 +169,11 @@ div.emotional {
   font-size: 0.8em;
 }
 
+.text-main-stage {
+  margin-top: 1em;
+  text-align: left;
+}
+
 @media (min-width:801px)  { 
   .slider-stage {
     text-align: center;
