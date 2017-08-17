@@ -82,12 +82,8 @@ function logAction(action, identifier) {
 
     jQuery.ajax({
         url: server + "/log/action",
-        type: "POST",
-        headers: {
-            "Content-Type": "application/json; charset=utf-8",
-        },
-        contentType: "application/json",
-        data: action
+        type: "GET",
+        data: {data: action}
     })
     .done(function(data, textStatus, jqXHR) {
         // console.log("HTTP Request Succeeded: " + jqXHR.status);
