@@ -86,10 +86,11 @@ h2 {
 }
 
 .nakedProducts {
-  height: 70%;
+  height: 50%;
   margin-top: 8rem;
   width: 100%;
-  background-image: url(/assets/nakedProducts.png);
+  /* background-image: url(/assets/nakedProducts.png); */
+  background-image: url(/assets/Price_Model.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 66% 39%;
@@ -174,6 +175,20 @@ div.emotional {
   text-align: left;
 }
 
+.mission {
+  text-align: left;
+}
+
+.mission span {
+  line-height: 1.3em;
+  font-size: 1.3em;
+}
+.mission span:last-child {
+  line-height: 1.3em;
+  display: block;
+  font-weight: 600;
+}
+
 @media (min-width:801px)  { 
   .slider-stage {
     text-align: center;
@@ -187,6 +202,10 @@ div.emotional {
     padding: 0;
   }
 
+  .mission {
+    text-align: center;
+  }
+
   .mobile-center img {
     max-width: 200px;
     margin-right: 0;
@@ -198,5 +217,10 @@ div.emotional {
   }
   .pitchShot {
     height: 70%;
+  }
+
+  .nakedProducts {
+    height: 60%;
+    background-image: url(/assets/Price_Model_wide.jpg);
   }
 }
