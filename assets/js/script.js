@@ -26,6 +26,7 @@ if (window.location.pathname.indexOf('product') > -1) {
 
     var GA_LOCAL_STORAGE_KEY = 'ga:clientId';
     if (window.localStorage) {
+     try { 
       ga('create', {
         'trackingId': 'UA-104468879-1',
         'cookieDomain': 'auto',
@@ -35,6 +36,9 @@ if (window.location.pathname.indexOf('product') > -1) {
       ga(function (tracker) {
         localStorage.setItem(GA_LOCAL_STORAGE_KEY, tracker.get('clientId'));
       });
+     } catch(exception) {
+	     console.log(exception)
+     }
     }
     else {
       setTimeout("ga('send', 'event', 'Kein Bounce', '45 Sekunden')", 45000); ga('create', 'UA-104468879-1', 'auto');
