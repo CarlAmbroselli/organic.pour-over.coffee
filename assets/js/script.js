@@ -82,10 +82,25 @@ function addScollListenerToId(id) {
 // ============================================================================
 // Try Buttons
 $('.tryButton').each(function() { 
-	$(this).attr('href', 'thanks.html?product=05_'+ window.location.host + '&'+window.location.search.replace('?', '')) 
+  if(window.location.search.indexOf('product=') == -1){
+    $(this).attr('href', 'thanks.html?product=05_'+ window.location.host.split('.')[0] + '&'+window.location.search.replace('?', '')) 
+  }else{
+    $(this).attr('href', 'thanks.html'+window.location.search) 
+  }
 })
 $('.productButton').each(function() { 
-	$(this).attr('href', 'product.html?product=05_'+ window.location.host + '&'+window.location.search.replace('?', '')) 
+  if(window.location.search.indexOf('product=') == -1){
+    $(this).attr('href', 'product.html?product=05_'+ window.location.host.split('.')[0] + '&'+window.location.search.replace('?', '')) 
+  }else{
+    $(this).attr('href', 'product.html'+window.location.search) 
+  }
+})
+$('.productDetailButton').each(function() { 
+  if(window.location.search.indexOf('product=') == -1){
+    $(this).attr('href', 'productDetail.html?product=05_'+ window.location.host.split('.')[0] + '&'+window.location.search.replace('?', '')) 
+  }else{
+    $(this).attr('href', 'productDetail.html'+window.location.search) 
+  }
 })
 
 $('.tryButton, .productButton, .getNaked, .learnMore, #joinCommunity, .coffeeFilterButton, .coffeeButton, .orderButton').each(function() {
