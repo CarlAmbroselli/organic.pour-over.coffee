@@ -18,7 +18,7 @@ body, html{
 
 /* NEWSLETTER SIGNUP */
 .callToAction  a, .tryButton, .orderButton, .detailButton, .productButton {
-  background: #91c11e;
+  background: #2674de;
   border: none;
   border-radius: 2px;
   text-transform: uppercase;
@@ -27,7 +27,7 @@ body, html{
 
 .callToAction  a:hover,  .tryButton:hover, .productButton:hover, .orderButton:hover, .detailButton:hover {
   /* background: #79a119; */
-  background: #79a119;
+  background: #1850a0;
   border: none;
   color: white;
 }
@@ -68,10 +68,12 @@ h2 {
 
 .joseShot {
   height: 70%;
+  min-height: 800px;
   margin-top: 8rem;
   width: 100%;
   background-image: url(/assets/joseShot.jpg);
   background-size: cover;
+  background-position: bottom !important;
   background-repeat: no-repeat;
   background-position: 66% 8%;
 }
@@ -221,6 +223,6 @@ div.emotional {
 
   .nakedProducts {
     height: 60%;
-    background-image: url(/assets/Price_Model_wide.jpg);
+    background-image: url(/assets/Price_Model.jpg);
   }
 }
