@@ -94,8 +94,12 @@
 
     .thirds {
       width: 33.33%;
-      height: 80vh;
+      height: 100%;
       padding: 1rem;
+    }
+
+    .points {
+      height: 80%;
     }
 
     .thirds.first {
