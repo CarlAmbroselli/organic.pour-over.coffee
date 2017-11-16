@@ -1,0 +1,111 @@
+.overviewShot {
+  height: 100%;
+  width: 100%;
+}
+
+.overviewShot > .points{
+  display: flex;
+  flex-direction: column; 
+}
+
+.thirds {
+  width: 100%;
+  order: 2;
+  padding: 1rem 4rem;
+}
+
+.thirds.first {
+  order: 1;
+}
+
+.thirds > .content-type {
+  width: 100%;
+  text-align: center;
+}
+
+.coffeeImage {
+  max-width: 80%;
+  padding: 2rem 0;
+}
+
+.featurePoint > .iconContent > img{
+  width: 3rem;
+}
+
+.featurePoint > .textContent{
+  font-size: 2rem;
+  font-family: sans-serif;
+  line-height: 100%;
+  padding: 1rem;
+}
+
+.featurePoint{
+  display: flex;
+  margin-bottom: 4rem;
+}
+
+.featurePoint.right{
+  justify-content: flex-end;
+  text-align: right;
+}
+.featurePoint.left{
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.featureHeadline {
+  font-weight: bold;
+}
+
+.featureBody {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  width: 80%;
+}
+
+.featurePoint.right .featureBody{
+  margin-left: 20%;
+}
+.featurePoint.left .featureBody{
+  margin-right: 20%;
+}
+
+
+.subheadline {
+  padding: 2rem;
+  color: black;
+  font-family: Oswald, sans-serif;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.bottomConversion {
+  text-align: center;
+  margin: 2rem;
+}
+
+@media (min-width:801px)  { 
+  
+    .overviewShot > .points{
+      flex-direction: row; 
+    }
+
+    .thirds {
+      width: 33.33%;
+      height: 80vh;
+      padding: 1rem;
+    }
+
+    .thirds.first {
+      order: 2;
+    }
+
+    .thirds > .content-type {
+      margin-top: 50%;
+      width: 100%;
+      transform: translateY(-50%);
+      text-align: center;
+    }
+  }

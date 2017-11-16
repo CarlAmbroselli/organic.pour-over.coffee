@@ -55,7 +55,9 @@
 }
 
 .primaryButton:hover {
+  text-decoration: none;
   background-color: #a08161;
+  color: white;
 }
 
 #pitchIcon {
