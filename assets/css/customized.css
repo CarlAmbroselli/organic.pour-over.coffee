@@ -98,14 +98,14 @@ h2 {
   background-position: 66% 39%;
 }
 
-.pitchShot {
+/* .pitchShot {
   height: 50%;
   width: 100%;
   background-image: url(/assets/pitchImage.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 66% 62%;
-}
+} */
 
 .spaceContent div:last-child{
   margin-top: 1em;
@@ -217,9 +217,9 @@ div.emotional {
   .text-main-stage {
     text-align: left;
   }
-  .pitchShot {
+  /* .pitchShot {
     height: 70%;
-  }
+  } */
 
   .nakedProducts {
     height: 60%;

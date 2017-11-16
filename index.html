@@ -26,6 +26,7 @@
   <script data-main="portal/skripts/main" src="portal/skripts/lib/requirejs/require.min.js" async></script>
 
   <link href="assets/css/customized.css" rel="stylesheet" type="text/css">
+  <link href="assets/css/pitch.css" rel="stylesheet" type="text/css">
   <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1434436959980967&ev=PageView&noscript=1"
     /></noscript>
 </head>
@@ -44,8 +45,21 @@ PITCH SECTION - (Image on left - Text on right)
 ####################################################################################################
 -->
 
-  <div id="scroll-pitchnShot" class="pitchShot">
+  <div id="scroll-pitchShot" class="pitchShot">
+    <div class="overlay-dark"></div>
+
+    <div class="center-positioned">
+      <div><img id="pitchIcon" src="assets/pitch/icon.svg"></img></div>
+      <div><span class="byMelitta">by<img id="pitchIcon" class="small" src="assets/pitch/melitta_logo.png"></img></span></div>
+      <div><span class="headline">The Sipping Koi</span></div>
+      <div><span class="shortPitch">Lorem Ipsum dolor sit amet cum Laude grandulus sum Lagerus</span></div>
+      <div>
+        <div class="primaryButton">Unsere Produkte</div>
+      </div>
+    </div>
+
   </div>
+
   <div class="slider main-stage emotional" id="scroll-emotional">
     <div id="slider-342" class="slider-container" data-cycon-module="element-slider" data-option-carousel="false" data-option-paginationSelector="slider-pagination-main"
       data-option-duration="500" data-option-autoplay="1000000" data-option-paginationSelector="false">
@@ -73,11 +87,12 @@ PITCH SECTION - (Image on left - Text on right)
     </div>
   </div>
 
+  
   <!-- 
-####################################################################################################
-FEATURES - (Icons with Headline and Subheadline)
-####################################################################################################
--->
+    ####################################################################################################
+    FEATURES - (Icons with Headline and Subheadline)
+    ####################################################################################################
+  -->
   <div id="scroll-actionShot" class="actionShot">
   </div>
   <section class="background-story dark features">

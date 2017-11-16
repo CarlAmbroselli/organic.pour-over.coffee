@@ -1,0 +1,79 @@
+.pitchShot {
+  height: 100%;
+  width: 100%;
+  background-image: url(/assets/pitch/coffee.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 66% 62%;
+}
+
+.pitchShot > .overlay-dark {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5;
+}
+
+
+.center-positioned {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.center-positioned > div{
+  margin: 1.5rem 0;
+}
+
+.headline {
+  color: white;
+  font-family: Oswald, sans-serif;
+  text-transform: uppercase;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.shortPitch {
+  color: white;
+  font-family: Oswald, sans-serif;
+  font-size: 2rem;
+  font-style: italic;
+}
+
+.primaryButton {
+  background-color: #c7a079;
+  color: white;
+  font-size: 1.8rem;
+  padding: 1.5rem;
+  display: inline-block;
+  font-weight: 200;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.primaryButton:hover {
+  background-color: #a08161;
+}
+
+#pitchIcon {
+  height: 16rem;
+}
+#pitchIcon.small {
+  height: 4rem;
+}
+
+.byMelitta {
+  color: white;
+}
+
+@media (min-width:801px)  { 
+
+  .headline {
+    font-size: 8rem;
+  }
+}
+
+
