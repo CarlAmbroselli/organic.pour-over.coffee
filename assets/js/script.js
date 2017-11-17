@@ -28,7 +28,7 @@ if (window.location.pathname.indexOf('product') > -1) {
     if (window.localStorage) {
      try { 
       ga('create', {
-        'trackingId': 'UA-104468879-1',
+        'trackingId': 'UA-104468879-4',
         'cookieDomain': 'auto',
         'storage': 'none',
         'clientId': localStorage.getItem(GA_LOCAL_STORAGE_KEY)
