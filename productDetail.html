@@ -32,8 +32,17 @@
 
   <link href="assets/css/customized.css" rel="stylesheet" type="text/css">
 
-  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1434436959980967&ev=PageView&noscript=1"
-    /></noscript>
+    <script>
+    var token = localStorage.getItem('token');
+    if (!token) {
+        token = Math.random().toString(36).substring(7);
+        localStorage.setItem('token', token)
+    }
+    window.token = token
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', "/log/" + document.location.hostname + '/' + window.location.pathname.replace(/\//g, '%2F') + '/' + token.replace(/\//g, '%2F'), true);
+    xhr.send();
+</script>
 </head>
 
 <body style="background-color: #E9E7DF !important">
