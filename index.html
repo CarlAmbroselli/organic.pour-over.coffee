@@ -37,7 +37,7 @@
     }
     window.token = token
     var xhr = new XMLHttpRequest();
-    xhr.open('GET', "/log/" + document.location.hostname + '/' + window.location.pathname.replace(/\//g, '%2F') + '/' + token.replace(/\//g, '%2F'), true);
+    xhr.open('GET', "https://rare-market.coffee/log/" + document.location.hostname + '/' + window.location.pathname.replace(/\//g, '%2F') + '/' + token.replace(/\//g, '%2F'), true);
     xhr.send();
 </script>
 
