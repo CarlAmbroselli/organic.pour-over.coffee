@@ -18,7 +18,7 @@ body, html{
 
 /* NEWSLETTER SIGNUP */
 .callToAction  a, .tryButton, .orderButton, .detailButton, .productButton {
-  background: #2674de;
+  background: #82471b;
   border: none;
   border-radius: 2px;
   text-transform: uppercase;
@@ -27,7 +27,7 @@ body, html{
 
 .callToAction  a:hover,  .tryButton:hover, .productButton:hover, .orderButton:hover, .detailButton:hover {
   /* background: #79a119; */
-  background: #1850a0;
+  background: #82471b;
   border: none;
   color: white;
 }
