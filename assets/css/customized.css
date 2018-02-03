@@ -7,7 +7,8 @@
   text-align: center;
 }
 
-body, html{
+body,
+html {
   background-color: white !important;
 }
 
@@ -17,7 +18,11 @@ body, html{
 }
 
 /* NEWSLETTER SIGNUP */
-.callToAction  a, .tryButton, .orderButton, .detailButton, .productButton {
+.callToAction a,
+.tryButton,
+.orderButton,
+.detailButton,
+.productButton {
   background: #82471b;
   border: none;
   border-radius: 2px;
@@ -25,7 +30,11 @@ body, html{
   color: white;
 }
 
-.callToAction  a:hover,  .tryButton:hover, .productButton:hover, .orderButton:hover, .detailButton:hover {
+.callToAction a:hover,
+.tryButton:hover,
+.productButton:hover,
+.orderButton:hover,
+.detailButton:hover {
   /* background: #79a119; */
   background: #82471b;
   border: none;
@@ -35,7 +44,6 @@ body, html{
 h2 {
   word-wrap: break-word;
 }
-
 
 /* Sections */
 
@@ -107,7 +115,7 @@ h2 {
   background-position: 66% 62%;
 } */
 
-.spaceContent div:last-child{
+.spaceContent div:last-child {
   margin-top: 1em;
 }
 
@@ -122,12 +130,12 @@ h2 {
   font-size: 1.3em;
 }
 
-.features .featureListItem .iconWrapper{
+.features .featureListItem .iconWrapper {
   width: 45px;
   height: 45px;
   margin-right: 1em;
 }
-.features .featureListItem .iconWrapper > img{
+.features .featureListItem .iconWrapper > img {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -148,7 +156,6 @@ div.emotional {
   background: white;
   height: auto !important;
 }
-
 
 .mobile-center {
   text-align: center;
@@ -191,12 +198,17 @@ div.emotional {
   font-weight: 600;
 }
 
-@media (min-width:801px)  { 
+@media (min-width: 801px) {
   .slider-stage {
     text-align: center;
   }
   img.stars {
     max-width: 30% !important;
+  }
+
+  .center-on-desktop {
+    display: flex;
+    justify-content: center;
   }
 
   .mobile-center {
