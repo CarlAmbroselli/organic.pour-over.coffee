@@ -1,11 +1,11 @@
 .overviewShot {
-  height: 100%;
+  min-height: 100%;
   width: 100%;
 }
 
-.overviewShot > .points{
+.overviewShot > .points {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
 }
 
 .thirds {
@@ -28,27 +28,27 @@
   padding: 2rem 0;
 }
 
-.featurePoint > .iconContent > img{
+.featurePoint > .iconContent > img {
   width: 3rem;
 }
 
-.featurePoint > .textContent{
+.featurePoint > .textContent {
   font-size: 2rem;
   font-family: sans-serif;
   line-height: 100%;
   padding: 1rem;
 }
 
-.featurePoint{
+.featurePoint {
   display: flex;
   margin-bottom: 4rem;
 }
 
-.featurePoint.right{
+.featurePoint.right {
   justify-content: flex-end;
   text-align: right;
 }
-.featurePoint.left{
+.featurePoint.left {
   justify-content: flex-start;
   text-align: left;
 }
@@ -63,13 +63,12 @@
   width: 80%;
 }
 
-.featurePoint.right .featureBody{
+.featurePoint.right .featureBody {
   margin-left: 20%;
 }
-.featurePoint.left .featureBody{
+.featurePoint.left .featureBody {
   margin-right: 20%;
 }
-
 
 .subheadline {
   padding: 2rem;
@@ -86,30 +85,46 @@
   margin: 2rem;
 }
 
-@media (min-width:801px)  { 
-  
-    .overviewShot > .points{
-      flex-direction: row; 
-    }
+.shopConversion {
+  text-align: center;
+  margin: 2rem;
+}
 
-    .thirds {
-      width: 33.33%;
-      height: 100%;
-      padding: 1rem;
-    }
+.section-shop-opening {
+  background-color: #e9e7df;
+  padding: 1rem;
+  text-align: center;
+}
 
-    .points {
-      height: 80%;
-    }
+.shopDescription {
+  font-size: 1.5rem;
+  font-family: sans-serif;
+}
 
-    .thirds.first {
-      order: 2;
-    }
-
-    .thirds > .content-type {
-      margin-top: 50%;
-      width: 100%;
-      transform: translateY(-50%);
-      text-align: center;
-    }
+@media (min-width: 801px) {
+  .overviewShot > .points {
+    flex-direction: row;
   }
+
+  .thirds {
+    width: 33.33%;
+    height: 100vh !important;
+    padding: 1rem;
+  }
+
+  .points {
+    /* height: 80%; */
+    min-height: 100%;
+  }
+
+  .thirds.first {
+    order: 2;
+  }
+
+  .thirds > .content-type {
+    margin-top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    text-align: center;
+  }
+}

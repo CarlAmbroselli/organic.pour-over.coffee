@@ -32,14 +32,14 @@
   <script>
     var token = localStorage.getItem('token');
     if (!token) {
-        token = Math.random().toString(36).substring(7);
-        localStorage.setItem('token', token)
+      token = Math.random().toString(36).substring(7);
+      localStorage.setItem('token', token)
     }
     window.token = token
     var xhr = new XMLHttpRequest();
     xhr.open('GET', "https://rare-market.coffee/log/" + document.location.hostname + '/' + window.location.pathname.replace(/\//g, '%2F') + '/' + token.replace(/\//g, '%2F'), true);
     xhr.send();
-</script>
+  </script>
 
 </head>
 
@@ -61,10 +61,20 @@ PITCH SECTION - (Image on left - Text on right)
     <div class="overlay-dark"></div>
 
     <div class="center-positioned">
-      <div><img id="pitchIcon" src="assets/pitch/icon.svg"></img></div>
-      <div><span class="byMelitta">by<img id="pitchIcon" class="small" src="assets/pitch/melitta_logo.png"></img></span></div>
-      <div><span class="headline">The Sipping Koi</span></div>
-      <div><span class="shortPitch">Lorem Ipsum dolor sit amet cum Laude grandulus sum Lagerus</span></div>
+      <div>
+        <img id="pitchIcon" src="assets/pitch/icon.svg"></img>
+      </div>
+      <div>
+        <span class="byMelitta">by
+          <img id="pitchIcon" class="small" src="assets/pitch/melitta_logo.png"></img>
+        </span>
+      </div>
+      <div>
+        <span class="headline">The Sipping Koi</span>
+      </div>
+      <div>
+        <span class="shortPitch">Lorem Ipsum dolor sit amet cum Laude grandulus sum Lagerus</span>
+      </div>
       <div>
         <a href="/product.html" class="primaryButton">Unsere Produkte</a>
       </div>
@@ -72,7 +82,7 @@ PITCH SECTION - (Image on left - Text on right)
 
   </div>
 
-  <div class="overviewShot">
+  <div class="overviewShot scroll-overviewShot">
     <div class="subheadline">
       <span>Was wir tun</span>
     </div>
@@ -88,7 +98,7 @@ PITCH SECTION - (Image on left - Text on right)
               <div class="featureBody">Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetelis in mei. Meianpe icula euripidis,partem.</div>
             </div>
             <div class="iconContent">
-              <img src="assets/overview/coffee-cup.svg"/>
+              <img src="assets/overview/coffee-cup.svg" />
             </div>
           </div>
 
@@ -99,7 +109,7 @@ PITCH SECTION - (Image on left - Text on right)
               <div class="featureBody">Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetelis in mei. Meianpe icula euripidis,partem.</div>
             </div>
             <div class="iconContent">
-              <img src="assets/overview/coffee-cup.svg"/>
+              <img src="assets/overview/coffee-cup.svg" />
             </div>
           </div>
 
@@ -108,7 +118,7 @@ PITCH SECTION - (Image on left - Text on right)
       </div>
       <div class="thirds first">
         <div class="content-type">
-          <img class="coffeeImage" src="assets/overview/coffee.png"/>
+          <img class="coffeeImage" src="assets/overview/coffee.png" />
         </div>
       </div>
       <div class="thirds">
@@ -116,18 +126,18 @@ PITCH SECTION - (Image on left - Text on right)
           <!-- FEATURE 3 -->
           <div class="featurePoint left">
             <div class="iconContent">
-              <img src="assets/overview/coffee-cup.svg"/>
+              <img src="assets/overview/coffee-cup.svg" />
             </div>
             <div class="textContent">
               <div class="featureHeadline">Great Coffee</div>
               <div class="featureBody">Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetelis in mei. Meianpe icula euripidis,partem.</div>
             </div>
           </div>
-          
+
           <!-- FEATURE 4 -->
           <div class="featurePoint left">
             <div class="iconContent">
-              <img src="assets/overview/coffee-cup.svg"/>
+              <img src="assets/overview/coffee-cup.svg" />
             </div>
             <div class="textContent">
               <div class="featureHeadline">Great Coffee</div>
@@ -138,19 +148,31 @@ PITCH SECTION - (Image on left - Text on right)
       </div>
     </div>
     <div class="bottomConversion">
-        <a href="/product.html" class="primaryButton">Unsere Produkte</a>
-      </div>
+      <a href="/product.html" class="primaryButton">Unsere Produkte</a>
+    </div>
   </div>
 
-  
+  <div class="section-shop-opening">
+    <div class="subheadline">
+      <span>Unser erster Shop</span>
+    </div>
+    <p class="shopDescription">
+      Noch dieses Jahr eröffnen wir unsere erste Niederlassung in der wir ihnen unsere Produkte persönlich vorstellen werden.
+    </p>
+    <div class="shopConversion">
+      <a href="/thanks.html" class="primaryButton">Über die Shop Eröffnung</a>
+    </div>
+  </div>
+
+
   <!-- 
 	####################################################################################################
 	Impressum
 	####################################################################################################
 	-->
-  <section class="footer" id="footer">
+  <!-- <section class="footer" id="footer">
     <span>&nbsp;</span>
-  </section>
+  </section> -->
 
   <script src="portal/skripts/lib/jquery/jquery-1.11.3.min.js"></script>
   <script src="assets/js/logging.js"></script>
