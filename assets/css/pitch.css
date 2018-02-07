@@ -15,7 +15,6 @@
   opacity: 0.5;
 }
 
-
 .center-positioned {
   position: absolute;
   width: 100%;
@@ -24,7 +23,7 @@
   transform: translateY(-50%);
 }
 
-.center-positioned > div{
+.center-positioned > div {
   margin: 1.5rem 0;
 }
 
@@ -61,7 +60,7 @@
 }
 
 #pitchIcon {
-  height: 16rem;
+  height: 22rem;
 }
 #pitchIcon.small {
   height: 4rem;
@@ -71,11 +70,8 @@
   color: white;
 }
 
-@media (min-width:801px)  { 
-
+@media (min-width: 801px) {
   .headline {
     font-size: 8rem;
   }
 }
-
-
