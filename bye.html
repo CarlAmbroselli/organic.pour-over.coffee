@@ -53,20 +53,8 @@
     </div>
     <div class="section-row">
       <h3 class="header" style="padding: 0 10%; text-align: center; line-height: 34px;">
-        <p>Unser Shop ist gerade noch im Aufbau. Daher ist eine Bestellung zum aktuellen Zeitpunkt leider noch nicht möglich.
-          Als Dankeschön für dein Interesse erhältst du aber einen 25€ Gutschein den du einlösen kannst, sobald unser Shop
-          live geht.
-
-
-          <br />
-          <br />Den Gutschein senden wir dir gerne direkt per E-mail zu:</p>
+        <p>Wir benachrichtigen dich sobald unsere Plattform online ist.</p>
       </h3>
-    </div>
-    <div class="newsletter-container">
-      <div class="newsletter">
-        <input placeholder="E-mail" type="text" id="email">
-        <button id="send">Gutschein erhalten</button>
-      </div>
     </div>
   </div>
 
@@ -79,12 +67,10 @@
 
 <script>
   $("#send").click(function () {
-    var email = $("#email").val()
+    email = $("#email").val()
     logEvent('subscribe', 3, JSON.stringify(email.split('@')))
     if (email.length > 0) {
-      console.log(window.location.host + '/bye.html?' + window.token.replace(/\//g, '%2F') + '/' + email)
-      window.location = 'http://' + window.location.host + '/bye.html?' + window.token.replace(/\//g, '%2F') + '/' + email
-      console.log(window.location.host)
+      window.location.href = "https://rare-market.coffee/mail/" + document.location.hostname + '/' + window.location.pathname.replace(/\//g, '%2F') + '/' + window.token.replace(/\//g, '%2F') + '/' + email
     }
   })
 </script>

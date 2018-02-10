@@ -40,6 +40,19 @@
     xhr.open('GET', "https://rare-market.coffee/log/" + document.location.hostname + '/' + window.location.pathname.replace(/\//g, '%2F') + '/' + token.replace(/\//g, '%2F'), true);
     xhr.send();
   </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-104468879-4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-104468879-4');
+
+    function logEvent(buttonType, funnelStage, label) {
+      gtag('event', buttonType, { 'event_category': 'ButtonClick-' + funnelStage, event_label: label });
+    }
+  </script>
 
 </head>
 
@@ -76,7 +89,7 @@ PITCH SECTION - (Image on left - Text on right)
         <span class="shortPitch">Im Coffeeshop entdecken, zu Hause genießen</span>
       </div>
       <div>
-        <a href="/product.html" class="primaryButton">Unsere Produkte</a>
+        <a href="/product.html" class="primaryButton" onclick="logEvent('AllProducts-Top', 0)">Unsere Produkte</a>
       </div>
     </div>
 
@@ -148,7 +161,7 @@ PITCH SECTION - (Image on left - Text on right)
       </div>
     </div>
     <div class="bottomConversion">
-      <a href="/product.html" class="primaryButton">Unsere Produkte</a>
+      <a href="/product.html" class="primaryButton" onclick="logEvent('AllProducts-Bottom', 0)">Unsere Produkte</a>
     </div>
   </div>
 
@@ -160,7 +173,7 @@ PITCH SECTION - (Image on left - Text on right)
       Schon bald eröffnen wir die ersten Coffeeshops um unsere Kaffeeraritäten auch in deine Nähe zu bringen.
     </p>
     <div class="shopConversion">
-      <a href="/thanks.html" class="primaryButton">Über die Shop Eröffnung</a>
+      <a href="/thanks.html" class="primaryButton" onclick="logEvent('Shop-Opening', 0)">Über die Shop Eröffnung</a>
     </div>
   </div>
 

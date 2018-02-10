@@ -43,6 +43,20 @@
     xhr.open('GET', "https://rare-market.coffee/log/" + document.location.hostname + '/' + window.location.pathname.replace(/\//g, '%2F') + '/' + token.replace(/\//g, '%2F'), true);
     xhr.send();
   </script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-104468879-4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-104468879-4');
+
+    function logEvent(buttonType, funnelStage, label) {
+      gtag('event', buttonType, { 'event_category': 'ButtonClick-' + funnelStage, event_label: label });
+    }
+  </script>
 </head>
 
 <body style="background-color: #E9E7DF !important">
@@ -103,7 +117,8 @@ NAVIGATION BAR
                 </p>
               </div>
               <div class="text-center">
-                <a href="thanks.html" type="button" class="btn btn-default btn-lg orderButton tryButton" id="scroll-orderButton-top">Probierpaket bestellen</a>
+                <a href="thanks.html" type="button" onclick="logEvent('purchase-2', 2,  'Mandehling - 2')" class="btn btn-default btn-lg orderButton tryButton"
+                  id="scroll-orderButton-top">Probierpaket bestellen</a>
               </div>
 
             </div>
